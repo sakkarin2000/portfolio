@@ -14,10 +14,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Remove unused legacy styles */
-.logo,
-.logo.react,
-.card,
-.read-the-docs {
-  display: none;
+@media print {
+  body {
+    background: white !important;
+  }
+
+  /* Ensure padding and border are kept */
+  .print-area {
+    padding: 2rem !important;
+    border: 1px solid #ccc !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Optional: remove the print button */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Optional: ensure text color is visible */
+  * {
+    color: #000 !important;
+  }
 }

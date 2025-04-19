@@ -41,7 +41,9 @@ export function CareerItem({ experience }: Props) {
         {format(start, "MMM yyyy")} –{" "}
         {experience.endDate ? format(end, "MMM yyyy") : "Present"} ({duration})
       </span>
-      <p className="text-gray-700">{experience.description}</p>
+      {experience.description.map((row) => (
+        <p className="text-gray-700 text-md">{"- " + row}</p>
+      ))}
     </li>
   );
 }
