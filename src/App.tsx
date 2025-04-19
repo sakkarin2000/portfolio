@@ -140,9 +140,15 @@ function App() {
             </li>
             <li>
               <span className="font-semibold text-gray-700">
+                Documentations:
+              </span>{" "}
+              OpenAPI, D2lang, MermaidJS, Excalidraw, Gitlab Markdown
+            </li>
+            <li>
+              <span className="font-semibold text-gray-700">
                 Tools & Others:
               </span>{" "}
-              Git, GitLab, GitHub, Jira
+              Git, GitLab, GitHub, Jira, Bruno, Postman
             </li>
           </ul>
         </section>
