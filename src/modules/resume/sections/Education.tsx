@@ -2,7 +2,7 @@ import SectionContainer from "../components/shared/SectionContainer";
 
 const Education = () => {
   return (
-    <SectionContainer title="Education">
+    <SectionContainer title="EDUCATION">
       <ul className="list-disc list-inside space-y-2 text-gray-800">
         <li className="list-disc list-outside pl-2 text-md text-gray-700">
           B.Sc. in Computer Science (English Program) <br />

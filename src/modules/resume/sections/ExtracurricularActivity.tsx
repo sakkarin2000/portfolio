@@ -2,7 +2,7 @@ import SectionContainer from "../components/shared/SectionContainer";
 
 const ExtracurricularActivity = () => {
   return (
-    <SectionContainer title="Extracurricular Activity">
+    <SectionContainer title="EXTRACURRICULAR ACTIVITY">
       <ul className="list-disc list-inside space-y-2 text-gray-800">
         <li className="list-disc list-outside pl-2 text-md text-gray-700">
           Secretary in School of Information Technology Student Association

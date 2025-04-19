@@ -1,4 +1,4 @@
-import { ICareerExperience } from "./ICareerExperience";
+import { ICareerExperience } from "../components/career-experience/ICareerExperience";
 
 export const careerExperiences: ICareerExperience[] = [
   {
@@ -17,7 +17,7 @@ export const careerExperiences: ICareerExperience[] = [
     description: [
       "Maintained and updated the network diagram of the Head Office using SolarWinds.",
       "Monitored network switches to ensure infrastructure stability.",
-      "Designed a solution for Office365 deployment using Windows batch scripting.",
+      "Designed a solution for Office365 deployment using batch script.",
     ],
     startDate: "2022-06-01",
     endDate: "2022-07-31",
