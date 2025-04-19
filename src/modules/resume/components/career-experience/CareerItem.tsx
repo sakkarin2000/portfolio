@@ -34,16 +34,25 @@ export function CareerItem({ experience }: Props) {
     .join(" ");
 
   return (
-    <li className="space-y-1 list-disc list-inside">
-      <strong>{experience.role}</strong> at {experience.company}
-      <br />
-      <span className="text-sm text-gray-500">
-        {format(start, "MMM yyyy")} –{" "}
-        {experience.endDate ? format(end, "MMM yyyy") : "Present"} ({duration})
-      </span>
-      {experience.description.map((row) => (
-        <p className="text-gray-700 text-md">{"- " + row}</p>
-      ))}
+    <li className="list-disc list-outside pl-2 text-md text-gray-700">
+      <div className="flex justify-between">
+        <span>
+          <strong>{experience.role}</strong> at {experience.company}
+        </span>
+        <span className="text-sm text-gray-500 whitespace-nowrap">
+          {format(start, "MMM yyyy")} –{" "}
+          {experience.endDate ? format(end, "MMM yyyy") : "Present"}{" "}
+          {experience.endDate && `(${duration})`}
+        </span>
+      </div>
+
+      <div className="mt-1 space-y-1">
+        {experience.description.map((row, idx) => (
+          <p key={idx} className="text-gray-700">
+            {"- " + row}
+          </p>
+        ))}
+      </div>
     </li>
   );
 }
