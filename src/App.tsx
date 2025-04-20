@@ -1,4 +1,4 @@
-import Layout from "./components/layout";
+import Layout from "./components/Layout";
 import Resume from "./modules/resume";
 
 function App() {
