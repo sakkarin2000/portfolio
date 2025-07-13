@@ -1,54 +1,121 @@
-# React + TypeScript + Vite
+# 🧑‍💼 Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio site. Built with **React 19**, **Vite**, **Tailwind CSS**, and running with **Bun**. Deployment goes through **GitHub Pages**.
 
-Currently, two official plugins are available:
+## 🚀 Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://sakkarin2000.github.io/portfolio/](https://sakkarin2000.github.io/portfolio/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- React 19
+- Vite
+- Tailwind CSS
+- Bun (dev/build tool)
+- TypeScript
+- Deployed with `gh-pages`
+
+---
+
+## 📦 Install
+
+```bash
+bun install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💻 Dev mode
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+bun run dev
 ```
+
+Starts Vite dev server.
+
+---
+
+## 🔍 Preview production build
+
+```bash
+bun run preview
+```
+
+Runs the `dist` build locally with Vite preview.
+
+---
+
+## 🧪 Lint
+
+```bash
+bun run lint
+```
+
+Runs ESLint across the project.
+
+---
+
+## 🏗 Build
+
+```bash
+bun run build
+```
+
+- Runs `tsc -b` and builds the app with Vite  
+- Output will be in the `dist/` folder
+
+---
+
+## 🚢 Deploy
+
+```bash
+bun run deploy
+```
+
+This will:
+- Build the app first (automatically runs `bun run build` via `predeploy`)
+- Push `dist/` to the `gh-pages` branch
+- GitHub Pages will pick it up
+
+> 🔁 You don’t need to build manually before deploy — `predeploy` already handles that:
+
+```json
+"predeploy": "bun run build",
+"deploy": "gh-pages -d dist"
+```
+
+Make sure:
+- GitHub Pages is enabled in your repo settings
+- Source is set to `gh-pages` branch
+
+---
+
+## 📁 Project Structure
+
+```
+/
+├─ public/           # Static files
+├─ src/              # App source code
+│  ├─ components/    # React components
+│  └─ ...
+├─ dist/             # Build output (auto-generated)
+├─ bun.lockb         # Bun lockfile
+├─ tsconfig.json     # TypeScript config
+└─ vite.config.ts    # Vite config
+```
+
+---
+
+## ✍️ Customization
+
+Update content or style by editing stuff inside `src/`. Tailwind is already set up so you can use utility classes freely.
+
+---
+
+## 📄 License
+
+This project is personal. You can use it for inspiration, but don’t straight-up copy it.
+
+---
