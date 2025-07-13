@@ -42,7 +42,7 @@ export function CareerItem({ experience }: Props) {
         <span className="text-sm text-gray-500 whitespace-nowrap">
           {format(start, "MMM yyyy")} –{" "}
           {experience.endDate ? format(end, "MMM yyyy") : "Present"}{" "}
-          {experience.endDate && `(${duration})`}
+          {`(${duration})`}
         </span>
       </div>
 
