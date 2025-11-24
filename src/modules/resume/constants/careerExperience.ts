@@ -5,8 +5,8 @@ export const careerExperiences: ICareerExperience[] = [
     role: "Software Engineer",
     company: "Nipa Technology Co., Ltd.",
     description: [
-      "Developed core microservices—specifically the Identity and Feature Flag services—from the ground up, adhering to Onion Architecture principles to ensure modularity and maintainability.",
-      "Designed and developed internal administration tools using React and NestJS, which streamlined multi-hierarchy configuration management and improved operational efficiency.",
+      "Developed core microservices—specifically the Identity and Feature Flag services—from the ground up using Node.js (TypeScript) with Koa, TypeDI, and Routing-Controllers (similar to NestJS architecture), adhering to Onion Architecture principles to ensure modularity.",
+      "Designed and developed internal administration tools using React, which streamlined multi-hierarchy configuration management and improved operational efficiency.",
       "Initiated an OpenAPI-first approach for API design, enforcing consistent contracts that enabled seamless integration between teams.",
       "Optimized backend workflows by implementing Redis caching strategies. Enforced concurrency control to prevent race conditions and duplicate resource creation during project provisioning.",
       "Troubleshot and resolved production issues spanning service logic, deployment, and infrastructure, ensuring platform stability and reliability."
