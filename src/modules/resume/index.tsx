@@ -17,6 +17,11 @@ function Resume() {
       @tailwind utilities;
   
       @media print {
+        @page {
+          size: A4;
+          margin: 12mm 15mm;
+        }
+
         body {
           -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
@@ -42,7 +47,7 @@ function Resume() {
 
       <div
         ref={contentRef}
-        className="max-w-4xl mx-auto p-6 md:p-10 space-y-8"
+        className="mx-auto max-w-5xl md:p-8 print:p-0 print:m-0 print:w-full print:max-w-none space-y-5 shadow-md print:shadow-none bg-white"
         role="main"
       >
         {/* Header */}
@@ -85,8 +90,8 @@ function Resume() {
 
         {/* Education Section */}
         <section>
-          <div className="flex justify-between gap-[10px]">
-            <div className="pr-[10px] border-r border-gray-200 w-2/3">
+          <div className="flex justify-between gap-2.5">
+            <div className="pr-2.5 border-r border-gray-200 w-2/3">
               <Education />
             </div>
             <div className="w-1/3">
@@ -96,8 +101,8 @@ function Resume() {
         </section>
 
         <section>
-          <div className="flex justify-between gap-[10px]">
-            <div className="pr-[10px] border-r border-gray-200 w-2/3">
+          <div className="flex justify-between gap-2.5">
+            <div className="pr-2.5 border-r border-gray-200 w-2/3">
               <TechStack />
             </div>
             <div className="w-1/3">

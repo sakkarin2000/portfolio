@@ -6,11 +6,11 @@ const OtherInformation = () => {
       <ul className="space-y-2 text-gray-800">
         <li>
           <span className="font-semibold text-gray-700">Language skills:</span>{" "}
-          Thai (native), English (intermediate, TOEIC 650 - expired)
+          Thai (native), English (Upper Intermediate, TOEIC 785 - CEFR B2)
         </li>
         <li>
           <span className="font-semibold text-gray-700">Hobbies:</span> Playing
-          Guitar, Singing, and Wooden Crafting
+          Guitar, Singing, Coding
         </li>
       </ul>
     </SectionContainer>
