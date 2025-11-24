@@ -3,7 +3,7 @@ import { ICareerExperience } from "../components/career-experience/ICareerExperi
 export const careerExperiences: ICareerExperience[] = [
   {
     role: "Software Engineer",
-    company: "Nipa Technology Co., Ltd.",
+    company: "Nipa Technology Co., Ltd. (Nipa Cloud)",
     description: [
       "Developed core microservices—specifically the Identity and Feature Flag services—from the ground up using Node.js (TypeScript) with Koa, TypeDI, and Routing-Controllers (similar to NestJS architecture), adhering to Onion Architecture principles to ensure modularity and testability.",
       "Designed and developed internal administration tools using React, which streamlined multi-hierarchy configuration management and improved operational efficiency.",
