@@ -6,7 +6,7 @@ export const careerExperiences: ICareerExperience[] = [
     company: "Nipa Technology Co., Ltd. (Nipa Cloud)",
     description: [
       "Develop and maintain core microservices e.g., Identity Service, Feature Flag Service from the ground up using Node.js (TypeScript) with Koa, TypeDI, and Routing-Controllers (NestJS like architecture), adhering to Clean Architecture principles to ensure modularity, maintainability and testability.",
-      "Refactor existing legacy codebases to improve performance, readability, and reduce technical debt",
+      "Refactor existing legacy codebases to improve performance, readability, and reduce technical debt.",
       "Apply design patterns and best practices to enhance code maintainability and scalability across services.",
       "Initiate an OpenAPI-first approach for API design, enforcing consistent contracts that enabled seamless integration between teams and ensure the business requirements are met effectively.",
       "Troubleshot and resolve production issues spanning service logic, deployment, and infrastructure, ensuring platform stability and reliability.",
