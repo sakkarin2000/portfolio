@@ -78,8 +78,7 @@ function Resume() {
             </p>
           </div>
           <p className="mt-2 text-base md:text-lg text-gray-600">
-            "Passionate about software craftsmanship, with a focus on writing
-            clean, maintainable code and building scalable solutions."
+            "Fullstack developer with passion for building high quality and scalable software"
           </p>
         </header>
 

@@ -3,11 +3,11 @@ export const techStackData: Record<
   { name: string; proficiency: number }[]
 > = {
   "Languages & Core": [
-    { name: "TypeScript", proficiency: 6 },
+    { name: "TypeScript (Proficient)", proficiency: 6 },
     { name: "JavaScript", proficiency: 6 },
     { name: "Node.js", proficiency: 6 },
     { name: "SQL", proficiency: 5 },
-    { name: "Java", proficiency: 3 },
+    { name: "Java (Basic)", proficiency: 3 },
   ],
   Backend: [
     { name: "NestJS", proficiency: 6 },
@@ -51,7 +51,6 @@ export const techStackData: Record<
     { name: "GitLab CI/CD", proficiency: 4 },
     { name: "K3s (Kubernetes)", proficiency: 3 },
     { name: "OpenStack", proficiency: 3 },
-    { name: "Nipa Cloud", proficiency: 3 },
     { name: "AWS EC2", proficiency: 3 },
     { name: "Git", proficiency: 6 },
   ],

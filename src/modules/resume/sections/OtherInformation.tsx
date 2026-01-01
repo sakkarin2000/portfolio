@@ -9,8 +9,8 @@ const OtherInformation = () => {
           Thai (native), English (Upper Intermediate, TOEIC 785 - CEFR B2)
         </li>
         <li>
-          <span className="font-semibold text-gray-700">Hobbies:</span> Playing
-          Guitar, Singing, Coding
+          <span className="font-semibold text-gray-700">Hobbies:</span>{" "}
+          Playing Guitar and Singing, Badminton, Table Tennis, Running, Traveling, Reading self-help books
         </li>
       </ul>
     </SectionContainer>
