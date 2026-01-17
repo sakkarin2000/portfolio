@@ -14,6 +14,17 @@ export const careerExperiences: ICareerExperience[] = [
     ],
     startDate: "2023-03-20"
   },
+  // {
+  //   role: "Full Stack Developer (Freelance)",
+  //   company: "Project: NEO Skill Test",
+  //   description: [
+  //     "Architected the backend architecture and implemented core modules' logic of the web application e.g., exam creation, dynamic score calculation, and examination reporting using NextJS and Node.js.",
+  //     "Integrated the backend and frontend components to ensure seamless user experience and working functionality.",
+  //     "Conduct the deployment of the developed application using Docker and Nginx on Amazon S3, enabling the project to go live securely and efficiently."
+  //   ],
+  //   startDate: "2023-01-12",
+  //   endDate: "2023-02-15"
+  // },
   {
     role: "Information System Intern",
     company: "Ajinomoto (Thailand) Co., Ltd.",
